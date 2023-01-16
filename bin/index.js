@@ -4,7 +4,7 @@ const app = require('../lib');
 
 const command = process.argv?.[2] ?? 'build';
 
-const valid = ['build', 'serve'];
+const valid = ['build', 'serve', 'package'];
 
 if (!valid.includes(command)) {
   console.log('Valid commands are: ', valid.join(', '))
