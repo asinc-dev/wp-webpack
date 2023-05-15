@@ -1,6 +1,10 @@
 {
-  "name": "asinc-wp-webpack",
+  "name": "@asinc/wp-webpack",
   "description": "TypeScript & SCSS compilation for Wordpress",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asinc-dev/wp-webpack.git"
+  },
   "author": "ASINC",
   "version": "1.0.0",
   "license": "MIT",
