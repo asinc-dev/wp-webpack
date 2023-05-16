@@ -15,7 +15,7 @@
   "scripts": {
     "start": "node ./bin/index.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.18.9",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-proposal-object-rest-spread": "^7.18.9",
@@ -63,9 +63,7 @@
     "webpack-format-messages": "^3.0.1",
     "webpack-merge": "^5.8.0",
     "webpack-messages": "^2.0.4",
-    "write-file-webpack-plugin": "^4.5.1"
-  },
-  "dependencies": {
+    "write-file-webpack-plugin": "^4.5.1",
     "minimist": "^1.2.7"
   },
   "prettier": "@wordpress/prettier-config"
