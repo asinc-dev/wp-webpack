@@ -6,7 +6,7 @@
     "url": "https://github.com/asinc-dev/wp-webpack.git"
   },
   "author": "ASINC",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "bin": {
     "asinc-wp-webpack": "bin/index.js"
