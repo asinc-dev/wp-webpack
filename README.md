@@ -27,3 +27,11 @@ add_action( 'wp_enqueue_scripts', function() {
   wp_register_script( 'webpack-script', "http://$hostname:$port/wp-content/themes/your-theme/build/app.js", null, null, true );
 });
 ```
+
+# Known issues
+
+- sort-css-media-queries dependency is locked to 2.4.0 as the maintainers decided to change how exports work. DOn't try to use other versions for now or you will get a:
+
+````
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: No "exports" main defined in /Users/stoufa/projects/wp-webpack/node_modules/sort-css-media-queries/package.json
+```
