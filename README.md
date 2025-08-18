@@ -41,6 +41,6 @@ Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: No "exports" main defined in /Users/stouf
 # Building 
  
 1. Ensure you have a valid NPM token that has access to deploy to `@asinc/wp-webpack`.  Email dw@largeinc.com if not.
-2. Commit your work and tag it to a new version: `git tag v1.x.x`.  You can run `git tag` to review current versions.
+2. Commit your work and use npm to version it: `npm version 1.x.x`
 3. Push your tag to ensure others can tack versions: `git push origin v1.x.x`
 4. Publish to NPM: `npm publish`
