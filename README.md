@@ -30,8 +30,17 @@ add_action( 'wp_enqueue_scripts', function() {
 
 # Known issues
 
-- sort-css-media-queries dependency is locked to 2.4.0 as the maintainers decided to change how exports work. DOn't try to use other versions for now or you will get a:
+- With SCSS's intruction of `@use` and the assumption that this package is being used on many legacy SCSS projects, we have locked the version to `1.77.6"`
+
+- sort-css-media-queries dependency is locked to 2.4.0 as the maintainers decided to change how exports work. Don't try to use other versions for now or you will get a:
 
 ````
 Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: No "exports" main defined in /Users/stoufa/projects/wp-webpack/node_modules/sort-css-media-queries/package.json
 ```
+
+# Building 
+ 
+1. Ensure you have a valid NPM token that has access to deploy to `@asinc/wp-webpack`.  Email dw@largeinc.com if not.
+2. Commit your work and tag it to a new version: `git tag v1.x.x`.  You can run `git tag` to review current versions.
+3. Push your tag to ensure others can tack versions: `git push origin v1.x.x`
+4. Publish to NPM: `npm publish`
